@@ -1,6 +1,6 @@
 import React from "react";
 
-const BASE_URL = "https://jan-darshan-7jgo.vercel.app";
+const BASE_URL = "https://jan-darshan.vercel.app";
 
 type JsonLdProps = {
   data: Record<string, any> | Array<Record<string, any>>;

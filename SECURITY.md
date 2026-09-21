@@ -10,7 +10,7 @@ Security updates and patches are actively applied to the production deployment r
 
 | Branch / Environment | Status | Supported |
 | :--- | :--- | :--- |
-| `main` (Production) | Active / Live (`https://jan-darshan-7jgo.vercel.app`) | :white_check_mark: |
+| `main` (Production) | Active / Live (`https://jan-darshan.vercel.app`) | :white_check_mark: |
 | Development / Staging Branches | Ephemeral / Non-production | :x: |
 
 ---
@@ -30,7 +30,7 @@ If you believe you have discovered a security vulnerability in JanDarshan, pleas
      `[SECURITY] JanDarshan Vulnerability Report`
 
 3. **Secure Web Contact:**
-   - You can also submit an inquiry through our production **[Contact Desk](https://jan-darshan-7jgo.vercel.app/contact)** by setting the subject to `Security Vulnerability Disclosure`.
+   - You can also submit an inquiry through our production **[Contact Desk](https://jan-darshan.vercel.app/contact)** by setting the subject to `Security Vulnerability Disclosure`.
 
 ---
 

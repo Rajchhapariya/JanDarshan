@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Terms and conditions governing access, permissible research use, fair utilization, and service guidelines for JanDarshan.",
   alternates: {
-    canonical: "https://jan-darshan-7jgo.vercel.app/terms",
+    canonical: "https://jan-darshan.vercel.app/terms",
   },
   openGraph: {
     title: "Terms of Use & Civic Access Guidelines — JanDarshan",
     description:
       "Terms and conditions governing access, permissible research use, fair utilization, and service guidelines for JanDarshan.",
-    url: "https://jan-darshan-7jgo.vercel.app/terms",
+    url: "https://jan-darshan.vercel.app/terms",
   },
 };
 

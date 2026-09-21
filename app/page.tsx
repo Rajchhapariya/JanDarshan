@@ -28,13 +28,13 @@ export const metadata: Metadata = {
   description:
     "Transparent, structured civic intelligence tracking the 18th Lok Sabha, Rajya Sabha, Chief Ministers, Portfolios, and 36 States & UTs.",
   alternates: {
-    canonical: "https://jan-darshan-7jgo.vercel.app",
+    canonical: "https://jan-darshan.vercel.app",
   },
   openGraph: {
     title: "JanDarshan — Independent Political & Legislative Platform",
     description:
       "Transparent, structured civic intelligence tracking the 18th Lok Sabha, Rajya Sabha, Chief Ministers, Portfolios, and 36 States & UTs.",
-    url: "https://jan-darshan-7jgo.vercel.app",
+    url: "https://jan-darshan.vercel.app",
     siteName: "JanDarshan",
     type: "website",
     images: [

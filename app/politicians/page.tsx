@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     "Comprehensive verified directory of Members of Parliament, Union Ministers, Chief Ministers, and key political figures across India.",
   alternates: {
-    canonical: "https://jan-darshan-7jgo.vercel.app/politicians",
+    canonical: "https://jan-darshan.vercel.app/politicians",
   },
   openGraph: {
     title: "Elected Representatives & Political Leaders — JanDarshan",
     description:
       "Comprehensive verified directory of Members of Parliament, Union Ministers, Chief Ministers, and key political figures across India.",
-    url: "https://jan-darshan-7jgo.vercel.app/politicians",
+    url: "https://jan-darshan.vercel.app/politicians",
   },
 };
 

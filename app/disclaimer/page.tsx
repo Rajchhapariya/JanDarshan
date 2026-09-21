@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Non-governmental status, independent civic research mission, non-partisan editorial neutrality, and data accuracy notice for JanDarshan.",
   alternates: {
-    canonical: "https://jan-darshan-7jgo.vercel.app/disclaimer",
+    canonical: "https://jan-darshan.vercel.app/disclaimer",
   },
   openGraph: {
     title: "Platform Disclaimer & Neutrality Statement — JanDarshan",
     description:
       "Non-governmental status, independent civic research mission, non-partisan editorial neutrality, and data accuracy notice for JanDarshan.",
-    url: "https://jan-darshan-7jgo.vercel.app/disclaimer",
+    url: "https://jan-darshan.vercel.app/disclaimer",
   },
 };
 

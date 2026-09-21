@@ -4,7 +4,7 @@ import Politician from "@/models/Politician";
 import Party from "@/models/Party";
 import State from "@/models/State";
 
-const base = process.env.NEXT_PUBLIC_APP_URL || "https://jan-darshan-7jgo.vercel.app";
+const base = process.env.NEXT_PUBLIC_APP_URL || "https://jan-darshan.vercel.app";
 
 export const revalidate = 86400; // Cache sitemap for 24 hours
 

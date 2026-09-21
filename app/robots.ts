@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const base = process.env.NEXT_PUBLIC_APP_URL || "https://jan-darshan-7jgo.vercel.app";
+const base = process.env.NEXT_PUBLIC_APP_URL || "https://jan-darshan.vercel.app";
 
 export default function robots(): MetadataRoute.Robots {
   const privateEndpoints = [

@@ -19,7 +19,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jan-darshan-7jgo.vercel.app"),
+  metadataBase: new URL("https://jan-darshan.vercel.app"),
   title: {
     default: "JanDarshan — Independent Political & Legislative Platform",
     template: "%s | JanDarshan",
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     "Non-Government Portal",
   ],
   alternates: {
-    canonical: "https://jan-darshan-7jgo.vercel.app",
+    canonical: "https://jan-darshan.vercel.app",
   },
   openGraph: {
     title: "JanDarshan — Independent Political & Legislative Platform",
     description:
       "Transparent, structured civic intelligence tracking the 18th Lok Sabha, Rajya Sabha, Chief Ministers, Portfolios, and 36 States & UTs.",
-    url: "https://jan-darshan-7jgo.vercel.app",
+    url: "https://jan-darshan.vercel.app",
     siteName: "JanDarshan (Independent)",
     locale: "en_IN",
     type: "website",

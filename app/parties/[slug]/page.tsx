@@ -45,12 +45,12 @@ export async function generateMetadata({ params }: PartyPageProps): Promise<Meta
     title,
     description,
     alternates: {
-      canonical: `https://jan-darshan-7jgo.vercel.app/parties/${slug}`,
+      canonical: `https://jan-darshan.vercel.app/parties/${slug}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://jan-darshan-7jgo.vercel.app/parties/${slug}`,
+      url: `https://jan-darshan.vercel.app/parties/${slug}`,
       siteName: "JanDarshan",
       type: "website",
       images: [
@@ -77,7 +77,7 @@ export default async function PartyPage({ params }: PartyPageProps) {
   const p = await getPartyBySlug(slug);
   if (!p) notFound();
 
-  const canonicalUrl = `https://jan-darshan-7jgo.vercel.app/parties/${slug}`;
+  const canonicalUrl = `https://jan-darshan.vercel.app/parties/${slug}`;
 
   return (
     <div className="space-y-8 animate-in fade-in duration-500 max-w-6xl mx-auto">

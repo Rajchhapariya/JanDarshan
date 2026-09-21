@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Contact directory, feedback channels, copyright notice procedures, and editorial inquiry channels for JanDarshan.",
   alternates: {
-    canonical: "https://jan-darshan-7jgo.vercel.app/contact",
+    canonical: "https://jan-darshan.vercel.app/contact",
   },
   openGraph: {
     title: "Contact & Editorial Inquiries — JanDarshan",
     description:
       "Contact directory, feedback channels, copyright notice procedures, and editorial inquiry channels for JanDarshan.",
-    url: "https://jan-darshan-7jgo.vercel.app/contact",
+    url: "https://jan-darshan.vercel.app/contact",
   },
 };
 

@@ -28,8 +28,8 @@ body:
     id: entity_name
     attributes:
       label: "Entity Name & JanDarshan URL"
-      description: "Provide the name and the link to the page on JanDarshan (e.g. Narendra Modi, https://jan-darshan-7jgo.vercel.app/politicians/narendra-modi)."
-      placeholder: "e.g. Narendra Modi (https://jan-darshan-7jgo.vercel.app/politicians/narendra-modi)"
+      description: "Provide the name and the link to the page on JanDarshan (e.g. Narendra Modi, https://jan-darshan.vercel.app/politicians/narendra-modi)."
+      placeholder: "e.g. Narendra Modi (https://jan-darshan.vercel.app/politicians/narendra-modi)"
     validations:
       required: true
 

@@ -146,6 +146,6 @@ npm run audit:data
 ## 6. Reporting Issues
 
 - **Data Inaccuracies:** Please use the [Data Inaccuracy Report template](https://github.com/Rajchhapariya/JanDarshan/issues/new?template=data_inaccuracy.yml) with required official gazette or Sansad links.
-- **Security Vulnerabilities:** Please do **NOT** file public issues for security vulnerabilities. Send security reports privately through the [Contact Form](https://jan-darshan-7jgo.vercel.app/contact) or directly to the repository maintainers.
+- **Security Vulnerabilities:** Please do **NOT** file public issues for security vulnerabilities. Send security reports privately through the [Contact Form](https://jan-darshan.vercel.app/contact) or directly to the repository maintainers.
 
 Thank you for helping keep JanDarshan accurate, fast, and accessible for everyone!

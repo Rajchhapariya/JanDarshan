@@ -253,7 +253,7 @@ Or create a `.env.local` file in the project root:
 # Required: MongoDB Connection String
 MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/jandarshan?retryWrites=true&w=majority
 
-# Optional: Application Base URL for Canonicals & Sitemaps (Default: https://jan-darshan-7jgo.vercel.app)
+# Optional: Application Base URL for Canonicals & Sitemaps (Default: https://jan-darshan.vercel.app)
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 # Optional (Recommended for data ingestion): Secret token for on-demand cache revalidation

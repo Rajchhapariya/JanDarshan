@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Transparent documentation of privacy controls, minimal data collection, cookie usage, and security practices on JanDarshan.",
   alternates: {
-    canonical: "https://jan-darshan-7jgo.vercel.app/privacy",
+    canonical: "https://jan-darshan.vercel.app/privacy",
   },
   openGraph: {
     title: "Privacy Policy & Data Protection Practices — JanDarshan",
     description:
       "Transparent documentation of privacy controls, minimal data collection, cookie usage, and security practices on JanDarshan.",
-    url: "https://jan-darshan-7jgo.vercel.app/privacy",
+    url: "https://jan-darshan.vercel.app/privacy",
   },
 };
 

@@ -53,12 +53,12 @@ export async function generateMetadata({ params }: PoliticianPageProps): Promise
     title,
     description,
     alternates: {
-      canonical: `https://jan-darshan-7jgo.vercel.app/politicians/${slug}`,
+      canonical: `https://jan-darshan.vercel.app/politicians/${slug}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://jan-darshan-7jgo.vercel.app/politicians/${slug}`,
+      url: `https://jan-darshan.vercel.app/politicians/${slug}`,
       siteName: "JanDarshan",
       type: "profile",
       images: [
@@ -87,7 +87,7 @@ export default async function PoliticianPage({ params }: PoliticianPageProps) {
 
   const statePath = p.state ? getStatePath(p.state) : undefined;
   const canonicalStateSlug = p.state ? getStateCanonicalSlug(p.state) : undefined;
-  const canonicalUrl = `https://jan-darshan-7jgo.vercel.app/politicians/${slug}`;
+  const canonicalUrl = `https://jan-darshan.vercel.app/politicians/${slug}`;
 
   return (
     <div className="space-y-8 max-w-5xl mx-auto animate-in fade-in duration-500">

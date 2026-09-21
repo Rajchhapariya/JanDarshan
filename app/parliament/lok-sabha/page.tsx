@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     "Explore the comprehensive directory of the 18th Lok Sabha of India with seating visualization, constituency mappings, and party affiliations.",
   alternates: {
-    canonical: "https://jan-darshan-7jgo.vercel.app/parliament/lok-sabha",
+    canonical: "https://jan-darshan.vercel.app/parliament/lok-sabha",
   },
   openGraph: {
     title: "18th Lok Sabha — Members of Parliament & Chamber",
     description:
       "Explore the comprehensive directory of the 18th Lok Sabha of India with seating visualization, constituency mappings, and party affiliations.",
-    url: "https://jan-darshan-7jgo.vercel.app/parliament/lok-sabha",
+    url: "https://jan-darshan.vercel.app/parliament/lok-sabha",
     siteName: "JanDarshan",
     type: "website",
     images: [
@@ -65,7 +65,7 @@ export default async function LokSabhaPage() {
     <>
       <JsonLd
         data={[
-          generateParliamentSchema("Lok Sabha", "https://jan-darshan-7jgo.vercel.app/parliament/lok-sabha"),
+          generateParliamentSchema("Lok Sabha", "https://jan-darshan.vercel.app/parliament/lok-sabha"),
           generateBreadcrumbSchema([
             { name: "Home", url: "/" },
             { name: "18th Lok Sabha", url: "/parliament/lok-sabha" },

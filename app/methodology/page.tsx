@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Documentation of statutory data sources, normalization rules, verification workflows, and provenance protocols utilized by JanDarshan.",
   alternates: {
-    canonical: "https://jan-darshan-7jgo.vercel.app/methodology",
+    canonical: "https://jan-darshan.vercel.app/methodology",
   },
   openGraph: {
     title: "Data Sources & Editorial Methodology — JanDarshan",
     description:
       "Documentation of statutory data sources, normalization rules, verification workflows, and provenance protocols utilized by JanDarshan.",
-    url: "https://jan-darshan-7jgo.vercel.app/methodology",
+    url: "https://jan-darshan.vercel.app/methodology",
   },
 };
 

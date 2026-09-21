@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     "Side-by-side comparative analysis of Members of Parliament, ministers, assets, education, and parliamentary terms.",
   alternates: {
-    canonical: "https://jan-darshan-7jgo.vercel.app/compare",
+    canonical: "https://jan-darshan.vercel.app/compare",
   },
   openGraph: {
     title: "Compare Representatives & Political Leaders — JanDarshan",
     description:
       "Side-by-side comparative analysis of Members of Parliament, ministers, assets, education, and parliamentary terms.",
-    url: "https://jan-darshan-7jgo.vercel.app/compare",
+    url: "https://jan-darshan.vercel.app/compare",
   },
 };
 

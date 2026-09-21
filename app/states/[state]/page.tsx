@@ -54,12 +54,12 @@ export async function generateMetadata({ params }: StatePageProps): Promise<Meta
     title,
     description,
     alternates: {
-      canonical: `https://jan-darshan-7jgo.vercel.app/states/${s.slug}`,
+      canonical: `https://jan-darshan.vercel.app/states/${s.slug}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://jan-darshan-7jgo.vercel.app/states/${s.slug}`,
+      url: `https://jan-darshan.vercel.app/states/${s.slug}`,
       siteName: "JanDarshan",
       type: "website",
       images: [
@@ -88,7 +88,7 @@ export default async function StatePage({ params }: StatePageProps) {
 
   const politicians = await getStatePoliticians(s.name);
   const statePath = s.name ? getStatePath(s.name) : undefined;
-  const canonicalUrl = `https://jan-darshan-7jgo.vercel.app/states/${s.slug}`;
+  const canonicalUrl = `https://jan-darshan.vercel.app/states/${s.slug}`;
 
   return (
     <div className="space-y-8 animate-in fade-in duration-500 max-w-6xl mx-auto">
