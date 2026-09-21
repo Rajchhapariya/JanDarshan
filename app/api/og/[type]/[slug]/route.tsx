@@ -8,7 +8,7 @@ export const runtime = "nodejs";
 
 export async function GET(_: Request, { params }: { params: Promise<{ type: string; slug: string }> }) {
   let category = "CIVIC DIRECTORY";
-  let title = "SattaDarshan";
+  let title = "JanDarshan";
   let subtitle = "Independent Political & Legislative Platform";
   let badge = "PUBLIC RECORD";
   let meta1 = "18th Lok Sabha & Rajya Sabha";
@@ -175,7 +175,7 @@ export async function GET(_: Request, { params }: { params: Promise<{ type: stri
                     lineHeight: 1,
                   }}
                 >
-                  Satta<span style={{ color: "#F59E0B" }}>Darshan</span>
+                  Jan<span style={{ color: "#F59E0B" }}>Darshan</span>
                 </span>
                 <span
                   style={{

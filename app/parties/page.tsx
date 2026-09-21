@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Explore recognized national and regional political parties in India, their symbols, leadership, parliamentary representation, and state alliances.",
   alternates: {
-    canonical: "https://satta-darshan-7jgo.vercel.app/parties",
+    canonical: "https://jan-darshan-7jgo.vercel.app/parties",
   },
   openGraph: {
-    title: "Political Parties of India — SattaDarshan",
+    title: "Political Parties of India — JanDarshan",
     description:
       "Explore recognized national and regional political parties in India, their symbols, leadership, parliamentary representation, and state alliances.",
-    url: "https://satta-darshan-7jgo.vercel.app/parties",
+    url: "https://jan-darshan-7jgo.vercel.app/parties",
   },
 };
 

@@ -6,15 +6,15 @@ import { DataAccuracyNotice } from "@/components/common/DataAccuracyNotice";
 export const metadata: Metadata = {
   title: "Data Sources & Editorial Methodology",
   description:
-    "Documentation of statutory data sources, normalization rules, verification workflows, and provenance protocols utilized by SattaDarshan.",
+    "Documentation of statutory data sources, normalization rules, verification workflows, and provenance protocols utilized by JanDarshan.",
   alternates: {
-    canonical: "https://satta-darshan-7jgo.vercel.app/methodology",
+    canonical: "https://jan-darshan-7jgo.vercel.app/methodology",
   },
   openGraph: {
-    title: "Data Sources & Editorial Methodology — SattaDarshan",
+    title: "Data Sources & Editorial Methodology — JanDarshan",
     description:
-      "Documentation of statutory data sources, normalization rules, verification workflows, and provenance protocols utilized by SattaDarshan.",
-    url: "https://satta-darshan-7jgo.vercel.app/methodology",
+      "Documentation of statutory data sources, normalization rules, verification workflows, and provenance protocols utilized by JanDarshan.",
+    url: "https://jan-darshan-7jgo.vercel.app/methodology",
   },
 };
 
@@ -37,7 +37,7 @@ export default function MethodologyPage() {
           Data Sources & Editorial Methodology
         </h1>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          SattaDarshan adheres to transparent, structured data collection standards to provide accurate democratic records. This document details our primary statutory sources, ingestion pipelines, normalization procedures, and verification protocols.
+          JanDarshan adheres to transparent, structured data collection standards to provide accurate democratic records. This document details our primary statutory sources, ingestion pipelines, normalization procedures, and verification protocols.
         </p>
       </div>
 
@@ -53,7 +53,7 @@ export default function MethodologyPage() {
             1. Authoritative Source Hierarchy
           </h2>
           <p>
-            SattaDarshan compiles data exclusively from publicly available official government archives, parliamentary directories, and statutory gazettes. Our data collection strictly observes the following hierarchy:
+            JanDarshan compiles data exclusively from publicly available official government archives, parliamentary directories, and statutory gazettes. Our data collection strictly observes the following hierarchy:
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -94,7 +94,7 @@ export default function MethodologyPage() {
             2. Normalization & Data Processing
           </h2>
           <p>
-            Raw legislative records frequently contain varying spelling, honorific prefixes, and differing abbreviations across languages. SattaDarshan processes raw records through a strict normalization pipeline:
+            Raw legislative records frequently contain varying spelling, honorific prefixes, and differing abbreviations across languages. JanDarshan processes raw records through a strict normalization pipeline:
           </p>
           <ul className="list-disc list-inside space-y-1.5 pl-2 text-xs">
             <li>
@@ -119,7 +119,7 @@ export default function MethodologyPage() {
             3. Treatment of Disputed or Contested Data
           </h2>
           <p>
-            In instances of party factional disputes, splits, or contested symbol allocations, SattaDarshan adheres strictly to the official orders and symbol notifications issued by the Election Commission of India and rulings of the respective Legislative Presiding Officers (Speaker of Lok Sabha or Chairman of Rajya Sabha).
+            In instances of party factional disputes, splits, or contested symbol allocations, JanDarshan adheres strictly to the official orders and symbol notifications issued by the Election Commission of India and rulings of the respective Legislative Presiding Officers (Speaker of Lok Sabha or Chairman of Rajya Sabha).
           </p>
           <p>
             Unverified allegations, social media speculation, and non-gazetted claims are excluded from public representative profiles.

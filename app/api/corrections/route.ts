@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
     // Hash the IP with salt to protect user privacy
     const ipHash = crypto
       .createHash("sha256")
-      .update(rawIp + "satta_darshan_civic_salt")
+      .update(rawIp + "jan_darshan_civic_salt")
       .digest("hex");
 
     if (!checkRateLimit(ipHash)) {
@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
     if (body.website_trap && String(body.website_trap).trim().length > 0) {
       return NextResponse.json({ 
         success: true, 
-        message: "Your correction has been submitted successfully. Thank you for helping improve the accuracy of Satta Darshan." 
+        message: "Your correction has been submitted successfully. Thank you for helping improve the accuracy of Jan Darshan." 
       }, NO_STORE);
     }
 
@@ -139,7 +139,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         success: true,
-        message: "Your correction has been submitted successfully. Thank you for helping improve the accuracy of Satta Darshan.",
+        message: "Your correction has been submitted successfully. Thank you for helping improve the accuracy of Jan Darshan.",
       },
       NO_STORE
     );

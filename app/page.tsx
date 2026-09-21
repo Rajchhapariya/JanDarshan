@@ -24,32 +24,32 @@ import { DataAccuracyNotice } from "@/components/common/DataAccuracyNotice";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SattaDarshan — Independent Political & Legislative Information Platform",
+  title: "JanDarshan — Independent Political & Legislative Information Platform",
   description:
     "Transparent, structured civic intelligence tracking the 18th Lok Sabha, Rajya Sabha, Chief Ministers, Portfolios, and 36 States & UTs.",
   alternates: {
-    canonical: "https://satta-darshan-7jgo.vercel.app",
+    canonical: "https://jan-darshan-7jgo.vercel.app",
   },
   openGraph: {
-    title: "SattaDarshan — Independent Political & Legislative Platform",
+    title: "JanDarshan — Independent Political & Legislative Platform",
     description:
       "Transparent, structured civic intelligence tracking the 18th Lok Sabha, Rajya Sabha, Chief Ministers, Portfolios, and 36 States & UTs.",
-    url: "https://satta-darshan-7jgo.vercel.app",
-    siteName: "SattaDarshan",
+    url: "https://jan-darshan-7jgo.vercel.app",
+    siteName: "JanDarshan",
     type: "website",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SattaDarshan Platform Preview",
+        alt: "JanDarshan Platform Preview",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SattaDarshan — Independent Political & Legislative Platform",
+    title: "JanDarshan — Independent Political & Legislative Platform",
     description:
       "Transparent, structured civic intelligence tracking the 18th Lok Sabha, Rajya Sabha, Chief Ministers, Portfolios, and 36 States & UTs.",
     images: ["/og-image.png"],

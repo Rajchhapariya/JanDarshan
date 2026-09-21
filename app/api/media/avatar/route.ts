@@ -60,7 +60,7 @@ export async function GET(req: NextRequest) {
     // Fetch server-side where browser CORP (Cross-Origin-Resource-Policy) is not enforced
     const upstreamRes = await fetch(parsed.toString(), {
       headers: {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 SattaDarshan/1.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 JanDarshan/1.0",
         Accept: "image/avif,image/webp,image/apng,image/*;q=0.8",
       },
       signal: controller.signal,

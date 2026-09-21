@@ -135,7 +135,7 @@ export function LokSabhaClient({ mps, states, parties }: LokSabhaClientProps) {
       {/* Non-Government Transparency Banner */}
       <div className="p-3.5 sm:p-4 rounded-2xl bg-muted/30 border border-border/70 text-xs text-muted-foreground">
         <p className="leading-relaxed">
-          <strong className="font-semibold text-foreground">Independent Legislative Visualization:</strong> Compiled from publicly available information (Source: Parliament of India / Sansad.in: <a href="https://sansad.in/" target="_blank" rel="noreferrer" className="text-primary hover:underline font-semibold">sansad.in</a> and Lok Sabha Secretariat: <a href="https://loksabha.nic.in/" target="_blank" rel="noreferrer" className="text-primary hover:underline font-semibold">loksabha.nic.in</a>). SattaDarshan is an independent, non-government platform and is not affiliated with or authorized by the Parliament of India.
+          <strong className="font-semibold text-foreground">Independent Legislative Visualization:</strong> Compiled from publicly available information (Source: Parliament of India / Sansad.in: <a href="https://sansad.in/" target="_blank" rel="noreferrer" className="text-primary hover:underline font-semibold">sansad.in</a> and Lok Sabha Secretariat: <a href="https://loksabha.nic.in/" target="_blank" rel="noreferrer" className="text-primary hover:underline font-semibold">loksabha.nic.in</a>). JanDarshan is an independent, non-government platform and is not affiliated with or authorized by the Parliament of India.
         </p>
       </div>
 

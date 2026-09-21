@@ -6,9 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for helping keep SattaDarshan accurate and up-to-date!
+        Thank you for helping keep JanDarshan accurate and up-to-date!
         
-        **Important:** SattaDarshan relies exclusively on published, official primary sources (*sansad.in*, *eci.gov.in*, State Gazettes, *india.gov.in*). Please provide the authoritative source URL verifying this correction.
+        **Important:** JanDarshan relies exclusively on published, official primary sources (*sansad.in*, *eci.gov.in*, State Gazettes, *india.gov.in*). Please provide the authoritative source URL verifying this correction.
 
   - type: dropdown
     id: entity_type
@@ -27,9 +27,9 @@ body:
   - type: input
     id: entity_name
     attributes:
-      label: "Entity Name & SattaDarshan URL"
-      description: "Provide the name and the link to the page on SattaDarshan (e.g. Narendra Modi, https://satta-darshan-7jgo.vercel.app/politicians/narendra-modi)."
-      placeholder: "e.g. Narendra Modi (https://satta-darshan-7jgo.vercel.app/politicians/narendra-modi)"
+      label: "Entity Name & JanDarshan URL"
+      description: "Provide the name and the link to the page on JanDarshan (e.g. Narendra Modi, https://jan-darshan-7jgo.vercel.app/politicians/narendra-modi)."
+      placeholder: "e.g. Narendra Modi (https://jan-darshan-7jgo.vercel.app/politicians/narendra-modi)"
     validations:
       required: true
 
@@ -51,8 +51,8 @@ body:
   - type: textarea
     id: current_data
     attributes:
-      label: "Current Information on SattaDarshan"
-      description: "What does SattaDarshan currently display that is inaccurate?"
+      label: "Current Information on JanDarshan"
+      description: "What does JanDarshan currently display that is inaccurate?"
       placeholder: "Describe the existing data on the website..."
     validations:
       required: true

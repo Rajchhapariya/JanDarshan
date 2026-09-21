@@ -5,15 +5,15 @@ import { Scale, CheckCircle, AlertTriangle, FileCheck, ChevronRight } from "luci
 export const metadata: Metadata = {
   title: "Terms of Use & Civic Access Guidelines",
   description:
-    "Terms and conditions governing access, permissible research use, fair utilization, and service guidelines for SattaDarshan.",
+    "Terms and conditions governing access, permissible research use, fair utilization, and service guidelines for JanDarshan.",
   alternates: {
-    canonical: "https://satta-darshan-7jgo.vercel.app/terms",
+    canonical: "https://jan-darshan-7jgo.vercel.app/terms",
   },
   openGraph: {
-    title: "Terms of Use & Civic Access Guidelines — SattaDarshan",
+    title: "Terms of Use & Civic Access Guidelines — JanDarshan",
     description:
-      "Terms and conditions governing access, permissible research use, fair utilization, and service guidelines for SattaDarshan.",
-    url: "https://satta-darshan-7jgo.vercel.app/terms",
+      "Terms and conditions governing access, permissible research use, fair utilization, and service guidelines for JanDarshan.",
+    url: "https://jan-darshan-7jgo.vercel.app/terms",
   },
 };
 
@@ -36,7 +36,7 @@ export default function TermsPage() {
           Terms of Use
         </h1>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          Welcome to SattaDarshan. By browsing or utilizing the structured legislative registries, geospatial maps, and public data on this platform, you agree to the terms outlined below.
+          Welcome to JanDarshan. By browsing or utilizing the structured legislative registries, geospatial maps, and public data on this platform, you agree to the terms outlined below.
         </p>
       </div>
 
@@ -48,10 +48,10 @@ export default function TermsPage() {
             1. Permitted Civic & Academic Use
           </h2>
           <p>
-            SattaDarshan grants visitors a revocable, non-exclusive license to access, view, search, and reference the public political and parliamentary data for educational, academic, journalistic, non-profit civic awareness, and personal research purposes.
+            JanDarshan grants visitors a revocable, non-exclusive license to access, view, search, and reference the public political and parliamentary data for educational, academic, journalistic, non-profit civic awareness, and personal research purposes.
           </p>
           <p>
-            Attribution to SattaDarshan when citing compiled comparative tables or visualizations in publications, articles, or research papers is appreciated.
+            Attribution to JanDarshan when citing compiled comparative tables or visualizations in publications, articles, or research papers is appreciated.
           </p>
         </section>
 
@@ -88,7 +88,7 @@ export default function TermsPage() {
             Parliamentary proceeding records, candidate affidavits, election statistics, and jurisdictional maps are public domain records originating from the respective statutory authorities (Parliament of India, Election Commission of India, Delimitation Commission).
           </p>
           <p>
-            The software interface design, custom styling, aggregated database schema, and layout code of SattaDarshan are protected under applicable copyright and intellectual property standards.
+            The software interface design, custom styling, aggregated database schema, and layout code of JanDarshan are protected under applicable copyright and intellectual property standards.
           </p>
         </section>
 
@@ -98,7 +98,7 @@ export default function TermsPage() {
             4. Limitation of Liability
           </h2>
           <p>
-            SattaDarshan is provided on an &ldquo;as is&rdquo; and &ldquo;as available&rdquo; basis without warranties of any kind, whether express or implied. While reasonable efforts are made to ensure data accuracy through official gazettes, SattaDarshan expressly disclaims liability for any loss, dispute, or electoral reliance arising from unintentional clerical errors or delayed gazette synchronization.
+            JanDarshan is provided on an &ldquo;as is&rdquo; and &ldquo;as available&rdquo; basis without warranties of any kind, whether express or implied. While reasonable efforts are made to ensure data accuracy through official gazettes, JanDarshan expressly disclaims liability for any loss, dispute, or electoral reliance arising from unintentional clerical errors or delayed gazette synchronization.
           </p>
         </section>
 
@@ -108,7 +108,7 @@ export default function TermsPage() {
             5. Acknowledgment of Independent Non-Government Status
           </h2>
           <p>
-            By using SattaDarshan, you expressly acknowledge that SattaDarshan is an independent, non-government civic platform and is not affiliated with, operated by, endorsed by, or connected to any government body, legislature, or election authority. SattaDarshan does not issue certified records or replace official government sources.
+            By using JanDarshan, you expressly acknowledge that JanDarshan is an independent, non-government civic platform and is not affiliated with, operated by, endorsed by, or connected to any government body, legislature, or election authority. JanDarshan does not issue certified records or replace official government sources.
           </p>
         </section>
 

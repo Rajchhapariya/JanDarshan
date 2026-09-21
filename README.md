@@ -1,12 +1,12 @@
-# SattaDarshan
+# JanDarshan
 
 **Independent Civic, Political & Legislative Information Platform for India**
 
-SattaDarshan is an independent, non-government civic data and research platform dedicated to aggregating, structuring, and visualizing publicly available political, legislative, and electoral information across India. The platform tracks members of the 18th Lok Sabha, Rajya Sabha, national and state political parties, Chief Ministers, Union Council of Ministers, and all 36 States and Union Territories.
+JanDarshan is an independent, non-government civic data and research platform dedicated to aggregating, structuring, and visualizing publicly available political, legislative, and electoral information across India. The platform tracks members of the 18th Lok Sabha, Rajya Sabha, national and state political parties, Chief Ministers, Union Council of Ministers, and all 36 States and Union Territories.
 
 > [!IMPORTANT]
 > **Independent Civic Platform Notice**
-> SattaDarshan is strictly an independent, private research and informational project. It is **not** an official government portal, is **not** affiliated with, authorized by, or certified by the Government of India, the Parliament of India (*Sansad*), the Election Commission of India (ECI), or any State or Union Territory Government. For statutory administrative filings, official gazettes, legal proceedings, or Right to Information (RTI) applications, citizens must consult official government portals directly.
+> JanDarshan is strictly an independent, private research and informational project. It is **not** an official government portal, is **not** affiliated with, authorized by, or certified by the Government of India, the Parliament of India (*Sansad*), the Election Commission of India (ECI), or any State or Union Territory Government. For statutory administrative filings, official gazettes, legal proceedings, or Right to Information (RTI) applications, citizens must consult official government portals directly.
 
 ---
 
@@ -110,7 +110,7 @@ The platform is built using modern, production-tested open-source libraries:
 ## Project Structure
 
 ```
-sattadarshan/
+jandarshan/
 ├── app/                              # Next.js App Router root
 │   ├── api/                          # Public and administrative API endpoints
 │   │   ├── contact/route.ts          # Contact message intake (Google Sheets forwarder)
@@ -175,7 +175,7 @@ sattadarshan/
 
 ## Data & Provenance
 
-SattaDarshan aggregates political data from publicly accessible, published records. 
+JanDarshan aggregates political data from publicly accessible, published records. 
 
 ### Sourcing & Verification Principles
 - **Public Sources:** Sourced from official legislative sites (`sansad.in`, `loksabhaph.nic.in`), Election Commission of India (ECI) election results, official State Government portals, MyGov India, and verified public domain archives.
@@ -185,13 +185,13 @@ SattaDarshan aggregates political data from publicly accessible, published recor
   - `lastVerifiedAt`: Timestamp of the most recent editorial verification.
   - `verificationStatus`: Classification of the record (`official`, `verified`, `historical`, `unverified`).
   - `tenureStatus`: Status of the office-holder (`serving`, `former`, `historical`).
-- **Dynamic Nature of Political Data:** Political positions, ministerial portfolios, parliamentary seating, and party affiliations can change rapidly due to elections, cabinet reshuffles, resignations, or legal determinations. SattaDarshan displays timestamps and source references, but users requiring statutory certainty must verify facts against current official gazettes.
+- **Dynamic Nature of Political Data:** Political positions, ministerial portfolios, parliamentary seating, and party affiliations can change rapidly due to elections, cabinet reshuffles, resignations, or legal determinations. JanDarshan displays timestamps and source references, but users requiring statutory certainty must verify facts against current official gazettes.
 
 ---
 
 ## SEO, GEO & AI Discoverability
 
-SattaDarshan includes a comprehensive technical SEO and Generative Engine Optimization (GEO) implementation designed to facilitate clear understanding by search engines and answer engines (Google, Bing, Perplexity, ChatGPT Search):
+JanDarshan includes a comprehensive technical SEO and Generative Engine Optimization (GEO) implementation designed to facilitate clear understanding by search engines and answer engines (Google, Bing, Perplexity, ChatGPT Search):
 
 - **Dynamic Sitemap (`/sitemap.xml`):** Generates an XML sitemap of approximately ~997 canonical URLs covering all politicians, parties, states/UTs, chambers, and informational routes with lean database projections.
 - **Bot-Aware Crawler Directives (`/robots.txt`):** Explicit rule sets for `Googlebot`, `Bingbot`, `OAI-SearchBot`, and `PerplexityBot`. Allows access to public pages, OG images, and media assets while protecting private API endpoints (`/api/contact`, `/api/corrections`, `/api/revalidate`, `/api/search`).
@@ -234,8 +234,8 @@ The platform features an interactive 3D WebGL reconstruction of the Indian parli
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Rajchhapariya/SattaDarshan.git
-cd sattadarshan
+git clone https://github.com/Rajchhapariya/JanDarshan.git
+cd jandarshan
 ```
 
 ### 2. Install Dependencies
@@ -251,9 +251,9 @@ cp .env.example .env.local
 Or create a `.env.local` file in the project root:
 ```env
 # Required: MongoDB Connection String
-MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/sattadarshan?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/jandarshan?retryWrites=true&w=majority
 
-# Optional: Application Base URL for Canonicals & Sitemaps (Default: https://satta-darshan-7jgo.vercel.app)
+# Optional: Application Base URL for Canonicals & Sitemaps (Default: https://jan-darshan-7jgo.vercel.app)
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 # Optional (Recommended for data ingestion): Secret token for on-demand cache revalidation
@@ -309,7 +309,7 @@ npm run start
 
 ## Contact & Editorial Corrections
 
-SattaDarshan features a two-way community accuracy pipeline:
+JanDarshan features a two-way community accuracy pipeline:
 
 1. **Editorial Correction Desk (`/corrections`):**
    - Allows citizens and researchers to submit factual corrections (outdated office, incorrect seat count, broken reference).
@@ -363,12 +363,12 @@ We welcome community contributions, analytical features, and data corrections! P
 
 Contributors and maintainers must adhere to the following principles:
 
-1. **Strict Political Neutrality:** SattaDarshan is non-partisan. Data presentation must remain objective, descriptive, and balanced. Avoid editorializing, partisan commentary, or subjective ratings.
+1. **Strict Political Neutrality:** JanDarshan is non-partisan. Data presentation must remain objective, descriptive, and balanced. Avoid editorializing, partisan commentary, or subjective ratings.
 2. **Zero Data Fabrication:** Never invent, extrapolate, or guess political facts, office holders, or seating numbers. Every change must be verified against authoritative public records.
 3. **Preserve Provenance:** When updating political records, maintain existing source URLs, verification notes, and historical term dates.
 4. **Minimal Scoped Diff:** In accordance with repository rules, avoid broad refactors or global styling changes to solve localized tasks.
 5. **Protect Secrets:** Never commit `.env` files, MongoDB credentials, API tokens, or Apps Script URLs. Ensure all local environment variables remain in `.env.local` (protected by `.gitignore`).
-6. **Preserve Light-Mode Aesthetic:** SattaDarshan uses a deliberate civic light-mode design system. Do not introduce unvetted theme toggles or dark-mode overrides unless requested.
+6. **Preserve Light-Mode Aesthetic:** JanDarshan uses a deliberate civic light-mode design system. Do not introduce unvetted theme toggles or dark-mode overrides unless requested.
 7. **Maintain Accessibility & Mobile Usability:** All interactive components, dialogs, and tables must support keyboard navigation and remain usable on mobile viewports.
 8. **Automated Pre-Commit Validation:** Husky and lint-staged automatically run ESLint (`--max-warnings=0`) and TypeScript compiler checks on staged files before every commit to ensure clean code quality.
 

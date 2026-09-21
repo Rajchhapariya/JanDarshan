@@ -1,6 +1,6 @@
 # Security Policy
 
-The **SattaDarshan** team takes the security, data privacy, and integrity of our civic platform seriously. We appreciate the responsible disclosure of any vulnerabilities found by researchers, developers, and users.
+The **JanDarshan** team takes the security, data privacy, and integrity of our civic platform seriously. We appreciate the responsible disclosure of any vulnerabilities found by researchers, developers, and users.
 
 ---
 
@@ -10,27 +10,27 @@ Security updates and patches are actively applied to the production deployment r
 
 | Branch / Environment | Status | Supported |
 | :--- | :--- | :--- |
-| `main` (Production) | Active / Live (`https://satta-darshan-7jgo.vercel.app`) | :white_check_mark: |
+| `main` (Production) | Active / Live (`https://jan-darshan-7jgo.vercel.app`) | :white_check_mark: |
 | Development / Staging Branches | Ephemeral / Non-production | :x: |
 
 ---
 
 ## Reporting a Vulnerability
 
-If you believe you have discovered a security vulnerability in SattaDarshan, please report it privately. **Do NOT file a public issue or discuss the vulnerability publicly until it has been resolved.**
+If you believe you have discovered a security vulnerability in JanDarshan, please report it privately. **Do NOT file a public issue or discuss the vulnerability publicly until it has been resolved.**
 
 ### Preferred Reporting Methods
 
 1. **GitHub Private Vulnerability Reporting (Recommended):**
-   - Navigate to the **[Security tab](https://github.com/Rajchhapariya/SattaDarshan/security)** of this repository.
+   - Navigate to the **[Security tab](https://github.com/Rajchhapariya/JanDarshan/security)** of this repository.
    - Click **"Report a vulnerability"** to open a private advisory draft.
 
 2. **Direct Email:**
    - Send an email to the lead maintainer at **`rajchhapariya8@gmail.com`** with the subject line:
-     `[SECURITY] SattaDarshan Vulnerability Report`
+     `[SECURITY] JanDarshan Vulnerability Report`
 
 3. **Secure Web Contact:**
-   - You can also submit an inquiry through our production **[Contact Desk](https://satta-darshan-7jgo.vercel.app/contact)** by setting the subject to `Security Vulnerability Disclosure`.
+   - You can also submit an inquiry through our production **[Contact Desk](https://jan-darshan-7jgo.vercel.app/contact)** by setting the subject to `Security Vulnerability Disclosure`.
 
 ---
 
@@ -72,4 +72,4 @@ To help us triage and resolve the issue quickly, please provide:
 - Social engineering, phishing, or physical attacks against maintainers.
 - Missing HTTP security headers that do not have a practical, demonstrable attack scenario.
 
-Thank you for helping keep SattaDarshan secure for all citizens!
+Thank you for helping keep JanDarshan secure for all citizens!

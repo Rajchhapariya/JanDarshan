@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   description:
     "Directory of the Rajya Sabha (Upper House) of India's Parliament with seating visualization, party representations, and state distributions.",
   alternates: {
-    canonical: "https://satta-darshan-7jgo.vercel.app/parliament/rajya-sabha",
+    canonical: "https://jan-darshan-7jgo.vercel.app/parliament/rajya-sabha",
   },
   openGraph: {
     title: "Rajya Sabha — Council of States | Indian Parliament",
     description:
       "Directory of the Rajya Sabha (Upper House) of India's Parliament with seating visualization, party representations, and state distributions.",
-    url: "https://satta-darshan-7jgo.vercel.app/parliament/rajya-sabha",
-    siteName: "SattaDarshan",
+    url: "https://jan-darshan-7jgo.vercel.app/parliament/rajya-sabha",
+    siteName: "JanDarshan",
     type: "website",
     images: [
       {
@@ -64,7 +64,7 @@ export default async function RajyaSabhaPage() {
     <>
       <JsonLd
         data={[
-          generateParliamentSchema("Rajya Sabha", "https://satta-darshan-7jgo.vercel.app/parliament/rajya-sabha"),
+          generateParliamentSchema("Rajya Sabha", "https://jan-darshan-7jgo.vercel.app/parliament/rajya-sabha"),
           generateBreadcrumbSchema([
             { name: "Home", url: "/" },
             { name: "Rajya Sabha", url: "/parliament/rajya-sabha" },

@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 /**
- * Production-grade Skeleton primitives for SattaDarshan.
+ * Production-grade Skeleton primitives for JanDarshan.
  * Strict LIGHT MODE ONLY as per project specification.
  */
 

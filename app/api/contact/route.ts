@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
     // Hash the IP with salt to protect user privacy
     const ipHash = crypto
       .createHash("sha256")
-      .update(rawIp + "satta_darshan_civic_salt")
+      .update(rawIp + "jan_darshan_civic_salt")
       .digest("hex");
 
     if (!checkRateLimit(ipHash)) {

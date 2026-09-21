@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     "Explore governance, Chief Ministers, ruling parties, Lok Sabha seats, and Vidhan Sabha assemblies across all 28 Indian States and 8 Union Territories.",
   alternates: {
-    canonical: "https://satta-darshan-7jgo.vercel.app/states",
+    canonical: "https://jan-darshan-7jgo.vercel.app/states",
   },
   openGraph: {
-    title: "States & Union Territories of India — SattaDarshan",
+    title: "States & Union Territories of India — JanDarshan",
     description:
       "Explore governance, Chief Ministers, ruling parties, Lok Sabha seats, and Vidhan Sabha assemblies across all 28 Indian States and 8 Union Territories.",
-    url: "https://satta-darshan-7jgo.vercel.app/states",
+    url: "https://jan-darshan-7jgo.vercel.app/states",
   },
 };
 

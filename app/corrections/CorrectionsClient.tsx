@@ -229,7 +229,7 @@ export function CorrectionsClient() {
             rows={3}
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            placeholder="Describe the inaccurate or outdated detail as currently displayed on SattaDarshan..."
+            placeholder="Describe the inaccurate or outdated detail as currently displayed on JanDarshan..."
             className="w-full px-3.5 py-2.5 rounded-xl border border-border bg-background text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20"
             required
           />

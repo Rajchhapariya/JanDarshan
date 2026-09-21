@@ -19,13 +19,13 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://satta-darshan-7jgo.vercel.app"),
+  metadataBase: new URL("https://jan-darshan-7jgo.vercel.app"),
   title: {
-    default: "SattaDarshan — Independent Political & Legislative Platform",
-    template: "%s | SattaDarshan",
+    default: "JanDarshan — Independent Political & Legislative Platform",
+    template: "%s | JanDarshan",
   },
   description:
-    "SattaDarshan is an independent, non-government platform for exploring publicly available political and legislative information, tracking the 18th Lok Sabha, Rajya Sabha, political parties, and state jurisdictions.",
+    "JanDarshan is an independent, non-government platform for exploring publicly available political and legislative information, tracking the 18th Lok Sabha, Rajya Sabha, political parties, and state jurisdictions.",
   keywords: [
     "India Politics",
     "Lok Sabha",
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
     "Non-Government Portal",
   ],
   alternates: {
-    canonical: "https://satta-darshan-7jgo.vercel.app",
+    canonical: "https://jan-darshan-7jgo.vercel.app",
   },
   openGraph: {
-    title: "SattaDarshan — Independent Political & Legislative Platform",
+    title: "JanDarshan — Independent Political & Legislative Platform",
     description:
       "Transparent, structured civic intelligence tracking the 18th Lok Sabha, Rajya Sabha, Chief Ministers, Portfolios, and 36 States & UTs.",
-    url: "https://satta-darshan-7jgo.vercel.app",
-    siteName: "SattaDarshan (Independent)",
+    url: "https://jan-darshan-7jgo.vercel.app",
+    siteName: "JanDarshan (Independent)",
     locale: "en_IN",
     type: "website",
     images: [
@@ -53,14 +53,14 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SattaDarshan — Independent Political & Legislative Platform",
+        alt: "JanDarshan — Independent Political & Legislative Platform",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SattaDarshan — Independent Political & Legislative Platform",
+    title: "JanDarshan — Independent Political & Legislative Platform",
     description:
       "Transparent, structured civic intelligence tracking the 18th Lok Sabha, Rajya Sabha, Chief Ministers, Portfolios, and 36 States & UTs.",
     images: ["/og-image.png"],

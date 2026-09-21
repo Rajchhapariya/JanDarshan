@@ -99,7 +99,7 @@ const CANONICAL_LEADERS: Array<{ slug: string; search: string; name: string; rol
 async function fetchWikiThumbnail(title: string): Promise<string | null> {
   try {
     const res = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`, {
-      headers: { "User-Agent": "SattaDarshan/1.0 (civic-portal@sattadarshan.in)" },
+      headers: { "User-Agent": "JanDarshan/1.0 (civic-portal@jandarshan.in)" },
     });
     if (!res.ok) return null;
     const data = await res.json();

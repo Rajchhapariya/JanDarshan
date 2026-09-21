@@ -1,12 +1,12 @@
 name: "Feature Suggestion"
-description: "Propose an idea, civic visualization, or analytical enhancement for SattaDarshan"
+description: "Propose an idea, civic visualization, or analytical enhancement for JanDarshan"
 title: "[Feature Proposal]: "
 labels: ["enhancement", "civic-feature"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for helping envision the future of **SattaDarshan**!
+        Thank you for helping envision the future of **JanDarshan**!
         
         Please outline your feature proposal, ensuring that it upholds our core pillars: strict political neutrality, information density, high performance, and institutional trust.
 
@@ -48,5 +48,5 @@ body:
     attributes:
       label: "Platform Alignment"
       options:
-        - label: "I have read CONTRIBUTING.md and confirm this proposal aligns with SattaDarshan's non-partisan, public-benefit civic mandate."
+        - label: "I have read CONTRIBUTING.md and confirm this proposal aligns with JanDarshan's non-partisan, public-benefit civic mandate."
           required: true

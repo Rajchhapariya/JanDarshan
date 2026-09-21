@@ -1,8 +1,8 @@
-# Contributing to SattaDarshan
+# Contributing to JanDarshan
 
-Thank you for your interest in contributing to **SattaDarshan**!
+Thank you for your interest in contributing to **JanDarshan**!
 
-SattaDarshan is an independent, non-partisan civic and legislative information platform for Indian democracy. Our mission is to provide accurate, transparent, and structured political data for citizens, researchers, journalists, and students.
+JanDarshan is an independent, non-partisan civic and legislative information platform for Indian democracy. Our mission is to provide accurate, transparent, and structured political data for citizens, researchers, journalists, and students.
 
 To maintain the credibility, performance, and legal integrity of the platform, all contributors are expected to follow the guidelines outlined below.
 
@@ -11,7 +11,7 @@ To maintain the credibility, performance, and legal integrity of the platform, a
 ## 1. Core Principles & Philosophy
 
 ### Strict Non-Partisanship
-- SattaDarshan does not endorse, rank, judge, or rate political parties, leaders, or policies.
+- JanDarshan does not endorse, rank, judge, or rate political parties, leaders, or policies.
 - Presentation must remain objective, descriptive, factual, and neutral at all times.
 - Avoid loaded adjectives, subjective commentary, partisan coloring, or sensationalist headlines.
 
@@ -42,8 +42,8 @@ To maintain the credibility, performance, and legal integrity of the platform, a
 
 1. **Fork and Clone the Repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/SattaDarshan.git
-   cd SattaDarshan
+   git clone https://github.com/YOUR_USERNAME/JanDarshan.git
+   cd JanDarshan
    ```
 
 2. **Install Dependencies:**
@@ -58,7 +58,7 @@ To maintain the credibility, performance, and legal integrity of the platform, a
    ```
    Add your MongoDB connection string in `.env.local`:
    ```env
-   MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.example.mongodb.net/sattadarshan?retryWrites=true&w=majority
+   MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.example.mongodb.net/jandarshan?retryWrites=true&w=majority
    NEXT_PUBLIC_APP_URL=http://localhost:3000
    ```
    *(Never commit `.env.local` or any sensitive credentials to git!)*
@@ -128,7 +128,7 @@ npm run audit:data
 ### UI & Styling Standards
 - **Vanilla CSS / Tailwind:** Styles use tailored civic design tokens.
 - **Color Discipline:** Use color sparingly to convey institutional categorization (e.g. alliance color-coding), never to create visual bias or sensationalism.
-- **Light-Mode Only:** SattaDarshan is engineered as a clean, institutional light-mode civic reference. Do not inject dark-mode toggles or uncoordinated theme overrides.
+- **Light-Mode Only:** JanDarshan is engineered as a clean, institutional light-mode civic reference. Do not inject dark-mode toggles or uncoordinated theme overrides.
 - **Accessibility:** All dialogs, menus, and tables must support standard keyboard navigation (`Escape`, arrow keys, `Tab`) and ARIA labels.
 
 ### API & Data Fetching
@@ -145,7 +145,7 @@ npm run audit:data
 
 ## 6. Reporting Issues
 
-- **Data Inaccuracies:** Please use the [Data Inaccuracy Report template](https://github.com/Rajchhapariya/SattaDarshan/issues/new?template=data_inaccuracy.yml) with required official gazette or Sansad links.
-- **Security Vulnerabilities:** Please do **NOT** file public issues for security vulnerabilities. Send security reports privately through the [Contact Form](https://satta-darshan-7jgo.vercel.app/contact) or directly to the repository maintainers.
+- **Data Inaccuracies:** Please use the [Data Inaccuracy Report template](https://github.com/Rajchhapariya/JanDarshan/issues/new?template=data_inaccuracy.yml) with required official gazette or Sansad links.
+- **Security Vulnerabilities:** Please do **NOT** file public issues for security vulnerabilities. Send security reports privately through the [Contact Form](https://jan-darshan-7jgo.vercel.app/contact) or directly to the repository maintainers.
 
-Thank you for helping keep SattaDarshan accurate, fast, and accessible for everyone!
+Thank you for helping keep JanDarshan accurate, fast, and accessible for everyone!

@@ -87,7 +87,7 @@ export function DataAccuracyNotice({
 
       <div className="space-y-3 leading-relaxed">
         <p>
-          We strive to keep the information on SattaDarshan accurate and up to date. However, political, electoral, legislative, and public information can change over time, and some information may occasionally be outdated, incomplete, delayed, or incorrect.
+          We strive to keep the information on JanDarshan accurate and up to date. However, political, electoral, legislative, and public information can change over time, and some information may occasionally be outdated, incomplete, delayed, or incorrect.
         </p>
         <p>
           We apologize for any inaccuracies or outdated information you may encounter.

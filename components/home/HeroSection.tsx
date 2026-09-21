@@ -32,7 +32,7 @@ export function HeroSection() {
   return (
     <section className="bg-gradient-to-br from-orange-50 via-white to-indigo-50 py-20 px-4">
       <div className="max-w-3xl mx-auto text-center">
-        <p className="text-sm font-medium text-orange-600 mb-2" style={{fontFamily:'Noto Sans Devanagari,sans-serif'}}>सत्ता दर्शन</p>
+        <p className="text-sm font-medium text-orange-600 mb-2" style={{fontFamily:'Noto Sans Devanagari,sans-serif'}}>जन दर्शन</p>
         <h1 className="text-4xl sm:text-5xl font-black text-gray-900 leading-tight">India&apos;s Political<br/><span className="text-orange-500">Transparency</span> Platform</h1>
         <p className="text-gray-500 mt-4 text-lg">Track politicians, parties & elections across all 36 states & UTs.</p>
         <div className="mt-8 flex gap-2 max-w-xl mx-auto">

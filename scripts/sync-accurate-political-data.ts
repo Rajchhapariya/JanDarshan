@@ -6,7 +6,7 @@ import Party from "../models/Party";
 async function syncAccurateData() {
   await connectDB();
   console.log("==================================================================");
-  console.log("🚀 EXECUTING SATTADARSHAN PRODUCTION DATA NORMALIZATION & PROVENANCE");
+  console.log("🚀 EXECUTING JANDARSHAN PRODUCTION DATA NORMALIZATION & PROVENANCE");
   console.log("   Reference Audit Date: 15 September 2026");
   console.log("==================================================================\n");
 

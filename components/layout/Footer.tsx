@@ -20,7 +20,7 @@ export function Footer() {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-center sm:text-left">
           <div className="flex items-center gap-2 text-foreground font-semibold">
             <ShieldAlert className="h-4 w-4 text-amber-600 flex-shrink-0" />
-            <span>SattaDarshan is an independent, non-government website and is not affiliated with or endorsed by any government institution or political organization.</span>
+            <span>JanDarshan is an independent, non-government website and is not affiliated with or endorsed by any government institution or political organization.</span>
           </div>
           <button
             type="button"
@@ -38,13 +38,13 @@ export function Footer() {
           <div className="flex items-center gap-2.5">
             <Image
               src="/logo-header.png"
-              alt="SattaDarshan Logo"
+              alt="JanDarshan Logo"
               width={32}
               height={32}
               className="h-8 w-8 object-contain flex-shrink-0"
             />
             <span className="font-extrabold text-foreground text-base tracking-tight">
-              Satta<span className="text-amber-500">Darshan</span>
+              Jan<span className="text-amber-500">Darshan</span>
             </span>
           </div>
           <p className="text-xs text-muted-foreground leading-relaxed">
@@ -133,10 +133,10 @@ export function Footer() {
       <div className="border-t border-border/60 py-6 bg-muted/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           <p className="text-muted-foreground">
-            © {currentYear} SattaDarshan. Public informational and civic research directory.
+            © {currentYear} JanDarshan. Public informational and civic research directory.
           </p>
           <p className="text-muted-foreground text-center md:text-right max-w-xl">
-            SattaDarshan is an independent, non-government website and is not affiliated with or endorsed by any government institution or political organization.
+            JanDarshan is an independent, non-government website and is not affiliated with or endorsed by any government institution or political organization.
           </p>
         </div>
       </div>

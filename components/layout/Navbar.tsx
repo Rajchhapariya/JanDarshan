@@ -66,7 +66,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-2.5 transition-opacity hover:opacity-90 flex-shrink-0">
             <Image
               src="/logo-header.png"
-              alt="SattaDarshan Logo"
+              alt="JanDarshan Logo"
               width={36}
               height={36}
               className="h-9 w-9 object-contain flex-shrink-0"
@@ -74,7 +74,7 @@ export function Navbar() {
             />
             <div className="flex flex-col">
               <span className="font-extrabold text-foreground text-base tracking-tight leading-none">
-                Satta<span className="text-amber-500">Darshan</span>
+                Jan<span className="text-amber-500">Darshan</span>
               </span>
               <span className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider mt-0.5 hidden sm:inline-block">
                 Independent Civic Platform

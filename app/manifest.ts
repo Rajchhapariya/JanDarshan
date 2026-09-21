@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "SattaDarshan",
-    short_name: "SattaDarshan",
+    name: "JanDarshan",
+    short_name: "JanDarshan",
     description: "Independent Political & Legislative Information Platform",
     start_url: "/",
     display: "standalone",

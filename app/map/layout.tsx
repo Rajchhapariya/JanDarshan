@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     "Interactive state and union territory map of India displaying Lok Sabha seat allocations, Vidhan Sabha assemblies, and regional political representation.",
   alternates: {
-    canonical: "https://satta-darshan-7jgo.vercel.app/map",
+    canonical: "https://jan-darshan-7jgo.vercel.app/map",
   },
   openGraph: {
-    title: "Geospatial Civic & Parliamentary Map of India — SattaDarshan",
+    title: "Geospatial Civic & Parliamentary Map of India — JanDarshan",
     description:
       "Interactive state and union territory map of India displaying Lok Sabha seat allocations, Vidhan Sabha assemblies, and regional political representation.",
-    url: "https://satta-darshan-7jgo.vercel.app/map",
+    url: "https://jan-darshan-7jgo.vercel.app/map",
   },
 };
 

@@ -6,15 +6,15 @@ import { ContactClient } from "./ContactClient";
 export const metadata: Metadata = {
   title: "Contact & Editorial Inquiries",
   description:
-    "Contact directory, feedback channels, copyright notice procedures, and editorial inquiry channels for SattaDarshan.",
+    "Contact directory, feedback channels, copyright notice procedures, and editorial inquiry channels for JanDarshan.",
   alternates: {
-    canonical: "https://satta-darshan-7jgo.vercel.app/contact",
+    canonical: "https://jan-darshan-7jgo.vercel.app/contact",
   },
   openGraph: {
-    title: "Contact & Editorial Inquiries — SattaDarshan",
+    title: "Contact & Editorial Inquiries — JanDarshan",
     description:
-      "Contact directory, feedback channels, copyright notice procedures, and editorial inquiry channels for SattaDarshan.",
-    url: "https://satta-darshan-7jgo.vercel.app/contact",
+      "Contact directory, feedback channels, copyright notice procedures, and editorial inquiry channels for JanDarshan.",
+    url: "https://jan-darshan-7jgo.vercel.app/contact",
   },
 };
 
@@ -37,7 +37,7 @@ export default function ContactPage() {
           Contact & Editorial Inquiries
         </h1>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          SattaDarshan welcomes feedback, inquiries, and verified correction notices from citizens, researchers, parliamentary staff, and media organizations.
+          JanDarshan welcomes feedback, inquiries, and verified correction notices from citizens, researchers, parliamentary staff, and media organizations.
         </p>
       </div>
 
@@ -48,7 +48,7 @@ export default function ContactPage() {
           <span>Notice Regarding Official Administrative Grievances & RTI Requests</span>
         </div>
         <p className="leading-relaxed">
-          SattaDarshan is an independent, non-government civic research platform. SattaDarshan cannot receive, process, or forward official governmental grievances, statutory legal notices, or Right to Information (RTI) applications intended for public authorities. Any such statutory filings must be submitted directly to the relevant government department or official grievance portal.
+          JanDarshan is an independent, non-government civic research platform. JanDarshan cannot receive, process, or forward official governmental grievances, statutory legal notices, or Right to Information (RTI) applications intended for public authorities. Any such statutory filings must be submitted directly to the relevant government department or official grievance portal.
         </p>
       </div>
 
@@ -110,7 +110,7 @@ export default function ContactPage() {
       <div className="p-6 sm:p-8 rounded-3xl bg-card border border-border/80 shadow-sm space-y-4">
         <h2 className="text-lg font-bold text-foreground">Editorial Transparency Guidelines</h2>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          SattaDarshan operates as an independent, non-partisan civic data platform. Inquiries regarding research methodologies, open data formats, or academic integrations are reviewed in order of receipt.
+          JanDarshan operates as an independent, non-partisan civic data platform. Inquiries regarding research methodologies, open data formats, or academic integrations are reviewed in order of receipt.
         </p>
         <div className="flex flex-wrap gap-4 pt-1">
           <Link href="/methodology" className="text-xs font-semibold text-primary hover:underline">

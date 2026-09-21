@@ -1,5 +1,5 @@
 /**
- * SattaDarshan - Google Sheets Integration Helper
+ * JanDarshan - Google Sheets Integration Helper
  * 
  * Routes user Contact messages and Correction reports to a private Google Sheet
  * via a secure Google Apps Script Web App endpoint.

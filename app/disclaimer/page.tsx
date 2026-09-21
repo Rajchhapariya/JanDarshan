@@ -6,15 +6,15 @@ import { DataAccuracyNotice } from "@/components/common/DataAccuracyNotice";
 export const metadata: Metadata = {
   title: "Platform Disclaimer & Neutrality Statement",
   description:
-    "Non-governmental status, independent civic research mission, non-partisan editorial neutrality, and data accuracy notice for SattaDarshan.",
+    "Non-governmental status, independent civic research mission, non-partisan editorial neutrality, and data accuracy notice for JanDarshan.",
   alternates: {
-    canonical: "https://satta-darshan-7jgo.vercel.app/disclaimer",
+    canonical: "https://jan-darshan-7jgo.vercel.app/disclaimer",
   },
   openGraph: {
-    title: "Platform Disclaimer & Neutrality Statement — SattaDarshan",
+    title: "Platform Disclaimer & Neutrality Statement — JanDarshan",
     description:
-      "Non-governmental status, independent civic research mission, non-partisan editorial neutrality, and data accuracy notice for SattaDarshan.",
-    url: "https://satta-darshan-7jgo.vercel.app/disclaimer",
+      "Non-governmental status, independent civic research mission, non-partisan editorial neutrality, and data accuracy notice for JanDarshan.",
+    url: "https://jan-darshan-7jgo.vercel.app/disclaimer",
   },
 };
 
@@ -37,7 +37,7 @@ export default function DisclaimerPage() {
           Platform Disclaimer & Editorial Policy
         </h1>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          SattaDarshan is an independent, non-partisan civic intelligence and open data platform. Please review the following core notices regarding our content, non-governmental standing, data accuracy, and editorial standards.
+          JanDarshan is an independent, non-partisan civic intelligence and open data platform. Please review the following core notices regarding our content, non-governmental standing, data accuracy, and editorial standards.
         </p>
       </div>
 
@@ -52,10 +52,10 @@ export default function DisclaimerPage() {
             1. Independent, Non-Governmental Standing
           </h2>
           <p>
-            <strong>SattaDarshan is an independent, non-government website.</strong> This website is not affiliated with, operated by, maintained by, endorsed by, sponsored by, or officially connected to the Government of India, Parliament of India, Lok Sabha, Rajya Sabha, Election Commission of India, any State Government, Union Territory Administration, political party, or any constitutional or statutory authority.
+            <strong>JanDarshan is an independent, non-government website.</strong> This website is not affiliated with, operated by, maintained by, endorsed by, sponsored by, or officially connected to the Government of India, Parliament of India, Lok Sabha, Rajya Sabha, Election Commission of India, any State Government, Union Territory Administration, political party, or any constitutional or statutory authority.
           </p>
           <p>
-            <strong>SattaDarshan does not replace official government websites.</strong> All parliamentary and legislative symbols, jurisdictional boundaries, and seal silhouettes displayed are strictly for civic education, identification, and public information purposes under fair dealing principles.
+            <strong>JanDarshan does not replace official government websites.</strong> All parliamentary and legislative symbols, jurisdictional boundaries, and seal silhouettes displayed are strictly for civic education, identification, and public information purposes under fair dealing principles.
           </p>
         </section>
 
@@ -65,7 +65,7 @@ export default function DisclaimerPage() {
             2. Strict Political Neutrality
           </h2>
           <p>
-            SattaDarshan maintains strict political neutrality. SattaDarshan:
+            JanDarshan maintains strict political neutrality. JanDarshan:
           </p>
           <ul className="list-disc list-inside space-y-1 pl-2 text-xs">
             <li>Does not endorse, support, or oppose any political party</li>
@@ -86,7 +86,7 @@ export default function DisclaimerPage() {
             3. Dynamic Nature of Political Information
           </h2>
           <p>
-            We make every reasonable effort to maintain accurate and current information, but political and electoral records can change over time and occasional delays or inaccuracies may occur. While SattaDarshan regularly synchronizes with publicly available official sources, records may periodically reflect the latest recorded update rather than real-time parliamentary proceedings.
+            We make every reasonable effort to maintain accurate and current information, but political and electoral records can change over time and occasional delays or inaccuracies may occur. While JanDarshan regularly synchronizes with publicly available official sources, records may periodically reflect the latest recorded update rather than real-time parliamentary proceedings.
           </p>
           <p>
             Citizens, legal practitioners, and researchers are encouraged to cross-verify time-sensitive legal or electoral matters against authoritative primary sources.
@@ -99,7 +99,7 @@ export default function DisclaimerPage() {
             4. Informational and Research Purpose Only
           </h2>
           <p>
-            The data presented on SattaDarshan is curated solely for educational, academic, journalistic, and democratic awareness purposes. It does not constitute legal advice, electoral advisory, financial counsel, or official government certifications.
+            The data presented on JanDarshan is curated solely for educational, academic, journalistic, and democratic awareness purposes. It does not constitute legal advice, electoral advisory, financial counsel, or official government certifications.
           </p>
         </section>
 

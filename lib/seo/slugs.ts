@@ -1,5 +1,5 @@
 /**
- * Canonical SEO Slug Helpers for SattaDarshan
+ * Canonical SEO Slug Helpers for JanDarshan
  * Resolves state, party, and entity names to clean canonical URL paths.
  */
 

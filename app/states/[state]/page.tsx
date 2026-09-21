@@ -54,13 +54,13 @@ export async function generateMetadata({ params }: StatePageProps): Promise<Meta
     title,
     description,
     alternates: {
-      canonical: `https://satta-darshan-7jgo.vercel.app/states/${s.slug}`,
+      canonical: `https://jan-darshan-7jgo.vercel.app/states/${s.slug}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://satta-darshan-7jgo.vercel.app/states/${s.slug}`,
-      siteName: "SattaDarshan",
+      url: `https://jan-darshan-7jgo.vercel.app/states/${s.slug}`,
+      siteName: "JanDarshan",
       type: "website",
       images: [
         {
@@ -88,7 +88,7 @@ export default async function StatePage({ params }: StatePageProps) {
 
   const politicians = await getStatePoliticians(s.name);
   const statePath = s.name ? getStatePath(s.name) : undefined;
-  const canonicalUrl = `https://satta-darshan-7jgo.vercel.app/states/${s.slug}`;
+  const canonicalUrl = `https://jan-darshan-7jgo.vercel.app/states/${s.slug}`;
 
   return (
     <div className="space-y-8 animate-in fade-in duration-500 max-w-6xl mx-auto">
@@ -115,7 +115,7 @@ export default async function StatePage({ params }: StatePageProps) {
       {/* Non-Government Transparency Banner */}
       <div className="p-3.5 sm:p-4 rounded-2xl bg-muted/30 border border-border/70 text-xs text-muted-foreground flex items-center justify-between gap-3">
         <p className="leading-relaxed">
-          <strong className="font-semibold text-foreground">Independent Civic Overview:</strong> Compiled from public state government portals and legislative registries. SattaDarshan is an independent, non-government platform and is not affiliated with or endorsed by the Government of {s.name}.
+          <strong className="font-semibold text-foreground">Independent Civic Overview:</strong> Compiled from public state government portals and legislative registries. JanDarshan is an independent, non-government platform and is not affiliated with or endorsed by the Government of {s.name}.
         </p>
       </div>
 

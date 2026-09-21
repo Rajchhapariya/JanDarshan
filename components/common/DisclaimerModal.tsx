@@ -14,7 +14,7 @@ export function DisclaimerModal() {
     setMounted(true);
     // Sensible browser session policy: show once per session
     try {
-      const acknowledged = sessionStorage.getItem("sattadarshan_disclaimer_ack");
+      const acknowledged = sessionStorage.getItem("jandarshan_disclaimer_ack");
       if (!acknowledged) {
         setIsOpen(true);
       }
@@ -57,7 +57,7 @@ export function DisclaimerModal() {
 
   const handleAcknowledge = () => {
     try {
-      sessionStorage.setItem("sattadarshan_disclaimer_ack", "true");
+      sessionStorage.setItem("jandarshan_disclaimer_ack", "true");
     } catch {}
     setIsOpen(false);
   };
@@ -75,12 +75,12 @@ export function DisclaimerModal() {
       <div 
         className="relative w-full sm:max-w-2xl rounded-t-3xl sm:rounded-3xl bg-card border border-border shadow-2xl overflow-hidden flex flex-col max-h-[92vh] max-h-[92dvh] animate-in slide-in-from-bottom-4 sm:zoom-in-95 duration-300"
       >
-        {/* Header Ribbon - Centered with SattaDarshan Logo & Dignified Civic Typography */}
+        {/* Header Ribbon - Centered with JanDarshan Logo & Dignified Civic Typography */}
         <div className="p-4 sm:p-6 border-b border-border/70 bg-muted/30 flex flex-col items-center text-center">
           <div className="mb-2 sm:mb-2.5 flex items-center justify-center">
             <Image
               src="/logo-header.png"
-              alt="SattaDarshan Logo"
+              alt="JanDarshan Logo"
               width={44}
               height={44}
               className="h-9 w-9 sm:h-11 sm:w-11 object-contain flex-shrink-0"
@@ -102,7 +102,7 @@ export function DisclaimerModal() {
         >
           <div className="space-y-3 pb-4">
             <p className="font-semibold text-foreground text-sm sm:text-base">
-              SattaDarshan is an independent, non-government website.
+              JanDarshan is an independent, non-government website.
             </p>
             <p>
               This website is <strong>not affiliated with, operated by, maintained by, endorsed by, sponsored by, or officially connected to government institutions or political organizations</strong>, including the Government of India, Parliament of India, Lok Sabha, Rajya Sabha, Election Commission of India, any State Government, Union Territory Administration, or political party.
@@ -111,10 +111,10 @@ export function DisclaimerModal() {
 
           <div className="space-y-3 pt-4 pb-4">
             <p>
-              SattaDarshan is an independent information platform that organizes and presents publicly available political, electoral, and legislative information for educational and research purposes.
+              JanDarshan is an independent information platform that organizes and presents publicly available political, electoral, and legislative information for educational and research purposes.
             </p>
             <p>
-              <strong>SattaDarshan does not replace official government websites.</strong> Information presented on this website should not be interpreted as an official government record, government communication, legal advice, or an official statement of any public authority.
+              <strong>JanDarshan does not replace official government websites.</strong> Information presented on this website should not be interpreted as an official government record, government communication, legal advice, or an official statement of any public authority.
             </p>
           </div>
 

@@ -5,15 +5,15 @@ import { Shield, Lock, EyeOff, Server, ChevronRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Privacy Policy & Data Protection Practices",
   description:
-    "Transparent documentation of privacy controls, minimal data collection, cookie usage, and security practices on SattaDarshan.",
+    "Transparent documentation of privacy controls, minimal data collection, cookie usage, and security practices on JanDarshan.",
   alternates: {
-    canonical: "https://satta-darshan-7jgo.vercel.app/privacy",
+    canonical: "https://jan-darshan-7jgo.vercel.app/privacy",
   },
   openGraph: {
-    title: "Privacy Policy & Data Protection Practices — SattaDarshan",
+    title: "Privacy Policy & Data Protection Practices — JanDarshan",
     description:
-      "Transparent documentation of privacy controls, minimal data collection, cookie usage, and security practices on SattaDarshan.",
-    url: "https://satta-darshan-7jgo.vercel.app/privacy",
+      "Transparent documentation of privacy controls, minimal data collection, cookie usage, and security practices on JanDarshan.",
+    url: "https://jan-darshan-7jgo.vercel.app/privacy",
   },
 };
 
@@ -36,7 +36,7 @@ export default function PrivacyPage() {
           Privacy Policy
         </h1>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          SattaDarshan operates as an open civic information repository. We believe public democratic data should be freely accessible without tracking citizens. This policy accurately documents what minimal technical data is handled when you browse the portal.
+          JanDarshan operates as an open civic information repository. We believe public democratic data should be freely accessible without tracking citizens. This policy accurately documents what minimal technical data is handled when you browse the portal.
         </p>
       </div>
 
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
             1. Zero Behavioral Tracking & No Commercial Pixels
           </h2>
           <p>
-            SattaDarshan does not employ third-party advertising trackers, cross-site profiling cookies, or behavioral marketing beacons. We do not sell, rent, monetize, or trade visitor information with commercial brokers or ad exchanges.
+            JanDarshan does not employ third-party advertising trackers, cross-site profiling cookies, or behavioral marketing beacons. We do not sell, rent, monetize, or trade visitor information with commercial brokers or ad exchanges.
           </p>
         </section>
 
@@ -58,7 +58,7 @@ export default function PrivacyPage() {
             2. Local Browser Storage & Cookie Usage
           </h2>
           <p>
-            SattaDarshan uses browser local storage exclusively for essential user interface preferences:
+            JanDarshan uses browser local storage exclusively for essential user interface preferences:
           </p>
           <ul className="list-disc list-inside space-y-1 pl-2 text-xs">
             <li>
@@ -97,7 +97,7 @@ export default function PrivacyPage() {
             4. Statutory Rights & Data Inquiries
           </h2>
           <p>
-            Because SattaDarshan displays public records of elected representatives and candidates filed pursuant to statutory election laws (Conduct of Elections Rules, 1961), public biographical and legislative records are presented in accordance with statutory open governance principles.
+            Because JanDarshan displays public records of elected representatives and candidates filed pursuant to statutory election laws (Conduct of Elections Rules, 1961), public biographical and legislative records are presented in accordance with statutory open governance principles.
           </p>
           <p>
             For privacy inquiries or technical data requests regarding user-submitted correction logs, please contact our editorial desk via our <Link href="/contact" className="text-primary hover:underline">Contact Page</Link>.

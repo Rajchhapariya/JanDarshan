@@ -1,6 +1,6 @@
 import React from "react";
 
-const BASE_URL = "https://satta-darshan-7jgo.vercel.app";
+const BASE_URL = "https://jan-darshan-7jgo.vercel.app";
 
 type JsonLdProps = {
   data: Record<string, any> | Array<Record<string, any>>;
@@ -21,8 +21,8 @@ export function generateWebSiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "SattaDarshan",
-    alternateName: ["Satta Darshan", "SattaDarshan Civic Intelligence"],
+    name: "JanDarshan",
+    alternateName: ["Jan Darshan", "JanDarshan Civic Intelligence"],
     url: BASE_URL,
     description:
       "Independent, non-government civic intelligence platform compiling public political, legislative, and electoral information across India.",
@@ -41,7 +41,7 @@ export function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "SattaDarshan",
+    name: "JanDarshan",
     url: BASE_URL,
     logo: `${BASE_URL}/icon.png`,
     description:
