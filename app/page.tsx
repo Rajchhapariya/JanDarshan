@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/jan-darshan-og.png",
         width: 1200,
         height: 630,
         alt: "JanDarshan Platform Preview",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "JanDarshan — Independent Political & Legislative Platform",
     description:
       "Transparent, structured civic intelligence tracking the 18th Lok Sabha, Rajya Sabha, Chief Ministers, Portfolios, and 36 States & UTs.",
-    images: ["/og-image.png"],
+    images: ["/jan-darshan-og.png"],
   },
 };
 
