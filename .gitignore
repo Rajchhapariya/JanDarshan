@@ -10,3 +10,12 @@ node_modules/
 .DS_Store
 rupps_india.json
 
+
+# Scaffolding and build caches
+.agents/
+.gemini/
+.claude/
+BUILD_AUDIT_LOG.md
+scratch/
+tsconfig.tsbuildinfo
+*.tsbuildinfo
