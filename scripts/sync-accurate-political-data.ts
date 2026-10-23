@@ -351,7 +351,7 @@ async function syncAccurateData() {
       console.log(`   - ${u.politician} (${u.slug}) references missing party: '${u.party}'`);
     }
   } else {
-    console.log("🎉 EXACT 100.0% of all 848 Politician records resolve cleanly to an existing Party record!");
+    console.log("[VERIFIED] EXACT 100.0% of all 848 Politician records resolve cleanly to an existing Party record!");
   }
 
   console.log("\n✅ DATA NORMALIZATION & PROVENANCE INJECTION COMPLETE.");
