@@ -18,7 +18,7 @@ export async function GET(req: NextRequest) {
     const safeRegex = escapeRegex(q);
     const regex = { $regex: safeRegex, $options: "i" };
 
-    // 1. Check for Parliament chamber matches
+    // Check for Parliament chamber matches
     const chamberMatches: any[] = [];
     if (/^(18th\s*)?lok(\s*sabha)?|lower\s*house|sansad/i.test(lowerQ)) {
       chamberMatches.push({
@@ -37,7 +37,7 @@ export async function GET(req: NextRequest) {
       });
     }
 
-    // 2. Fetch database entities
+    // Fetch database entities
     const words = q.split(/\s+/).filter(Boolean);
     const politicianFilter = words.length <= 1
       ? {
@@ -127,7 +127,7 @@ export async function GET(req: NextRequest) {
         .lean(),
     ]);
 
-    // 3. Priority Sorting: Prioritize exact matches and prefix matches
+    // Priority Sorting: Prioritize exact matches and prefix matches
     const politicianItems = politicians.map((p: any) => {
       const isExact = p.name.toLowerCase() === lowerQ;
       const isPrefix = p.name.toLowerCase().startsWith(lowerQ);

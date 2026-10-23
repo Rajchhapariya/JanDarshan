@@ -18,7 +18,7 @@ async function runTests() {
   };
 
   try {
-    // 1. ReDoS / Regex Injection Test
+    // ReDoS / Regex Injection Test
     console.log("\n[Test 1] Testing ReDoS / Regex Injection on Search API (?q=(.*)...");
     const searchRes = await request("/api/search?q=(.*)");
     console.log(`Status: ${searchRes.status}`);
@@ -28,7 +28,7 @@ async function runTests() {
       console.error("✗ FAIL: Unexpected search response", searchRes);
     }
 
-    // 2. Pagination Clamping Test
+    // Pagination Clamping Test
     console.log("\n[Test 2] Testing Unbounded Pagination Clamping (?limit=99999)...");
     const limitRes = await request("/api/politicians?limit=99999");
     console.log(`Status: ${limitRes.status}, Received politicians: ${limitRes.data.politicians?.length}`);
@@ -38,7 +38,7 @@ async function runTests() {
       console.error("✗ FAIL: Unbounded limit allowed", limitRes.data);
     }
 
-    // 3. Invalid Page Parameter Handling
+    // Invalid Page Parameter Handling
     console.log("\n[Test 3] Testing Invalid Page Parameter Handling (?page=-5&limit=-10)...");
     const pageRes = await request("/api/politicians?page=-5&limit=-10");
     console.log(`Status: ${pageRes.status}, Current page: ${pageRes.data.page}`);
@@ -48,7 +48,7 @@ async function runTests() {
       console.error("✗ FAIL: Invalid page not sanitized", pageRes.data);
     }
 
-    // 4. Mutation Lockdown: Unauthorized POST /api/politicians
+    // Mutation Lockdown: Unauthorized POST /api/politicians
     console.log("\n[Test 4] Testing Public Mutation Lockdown (POST /api/politicians)...");
     const postRes = await request("/api/politicians", {
       method: "POST",
@@ -62,7 +62,7 @@ async function runTests() {
       console.error("✗ FAIL: Public POST was not blocked!", postRes);
     }
 
-    // 5. Mutation Lockdown: Unauthorized PATCH /api/politicians/narendra-modi
+    // Mutation Lockdown: Unauthorized PATCH /api/politicians/narendra-modi
     console.log("\n[Test 5] Testing Public Mutation Lockdown (PATCH /api/politicians/narendra-modi)...");
     const patchRes = await request("/api/politicians/narendra-modi", {
       method: "PATCH",
@@ -76,7 +76,7 @@ async function runTests() {
       console.error("✗ FAIL: Public PATCH was not blocked!", patchRes);
     }
 
-    // 6. Mutation Lockdown: Unauthorized DELETE /api/politicians/narendra-modi
+    // Mutation Lockdown: Unauthorized DELETE /api/politicians/narendra-modi
     console.log("\n[Test 6] Testing Public Deletion Lockdown (DELETE /api/politicians/narendra-modi)...");
     const delRes = await request("/api/politicians/narendra-modi", { method: "DELETE" });
     console.log(`Status: ${delRes.status}`);
@@ -86,7 +86,7 @@ async function runTests() {
       console.error("✗ FAIL: Public DELETE was not blocked!", delRes);
     }
 
-    // 7. Honeypot Anti-Spam Verification on Corrections Endpoint
+    // Honeypot Anti-Spam Verification on Corrections Endpoint
     console.log("\n[Test 7] Testing Honeypot Anti-Spam on POST /api/corrections...");
     const honeypotRes = await request("/api/corrections", {
       method: "POST",
@@ -107,7 +107,7 @@ async function runTests() {
       console.error("✗ FAIL: Honeypot failed to catch bot payload", honeypotRes);
     }
 
-    // 8. Legitimate Correction Submission Test
+    // Legitimate Correction Submission Test
     console.log("\n[Test 8] Testing Valid Correction Submission on POST /api/corrections...");
     const validRes = await request("/api/corrections", {
       method: "POST",
@@ -129,7 +129,7 @@ async function runTests() {
       console.error("✗ FAIL: Valid correction rejected", validRes);
     }
 
-    // 9. HTTP Security Headers Verification
+    // HTTP Security Headers Verification
     console.log("\n[Test 9] Testing Production Security Headers on Root Route (/)...");
     const headerRes = await request("/");
     const csp = headerRes.headers.get("content-security-policy");

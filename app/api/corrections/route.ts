@@ -26,7 +26,7 @@ const NO_STORE = { headers: { "Cache-Control": "no-store, max-age=0" } };
 
 export async function POST(req: NextRequest) {
   try {
-    // 1. Guard against oversized payloads (64KB max)
+    // Guard against oversized payloads (64KB max)
     const contentLength = parseInt(req.headers.get("content-length") || "0", 10);
     if (contentLength > 65536) {
       return NextResponse.json(
@@ -62,7 +62,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 2. Anti-spam honeypot verification
+    // Anti-spam honeypot verification
     // If the hidden 'website_trap' field is filled, bot detected. Silently succeed without storing.
     if (body.website_trap && String(body.website_trap).trim().length > 0) {
       return NextResponse.json({ 
@@ -71,7 +71,7 @@ export async function POST(req: NextRequest) {
       }, NO_STORE);
     }
 
-    // 3. Input validation & sanitization
+    // Input validation & sanitization
     const recordType = String(body.recordType || "").trim();
     if (!["politician", "party", "state", "general"].includes(recordType)) {
       return NextResponse.json({ error: "Invalid record category." }, { status: 400, ...NO_STORE });
@@ -122,7 +122,7 @@ export async function POST(req: NextRequest) {
       contactEmail = rawEmail;
     }
 
-    // 4. Forward to private Google Spreadsheet via Google Apps Script Web App (NO MongoDB write)
+    // Forward to private Google Spreadsheet via Google Apps Script Web App (NO MongoDB write)
     await sendToGoogleAppsScript({
       action: "correction",
       submittedAt: new Date().toISOString(),

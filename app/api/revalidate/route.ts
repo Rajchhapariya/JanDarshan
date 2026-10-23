@@ -30,7 +30,7 @@ const NO_STORE_HEADERS = { "Cache-Control": "no-store, max-age=0" };
 
 export async function POST(req: NextRequest) {
   try {
-    // 1. Guard against oversized payloads (16KB max)
+    // Guard against oversized payloads (16KB max)
     const contentLength = parseInt(req.headers.get("content-length") || "0", 10);
     if (contentLength > 16384) {
       return NextResponse.json(
@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 2. Require secret in header only. Reject query parameter tokens to prevent URL/log exposure.
+    // Require secret in header only. Reject query parameter tokens to prevent URL/log exposure.
     const secret = req.headers.get("x-revalidate-secret")?.trim() || "";
     const configuredSecret = process.env.REVALIDATE_SECRET?.trim();
 

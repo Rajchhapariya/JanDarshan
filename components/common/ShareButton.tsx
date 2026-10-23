@@ -37,7 +37,7 @@ export function ShareButton({
       url: shareUrl,
     };
 
-    // 1. Try Web Share API if available and supported
+    // Try Web Share API if available and supported
     if (
       typeof navigator !== "undefined" &&
       typeof navigator.share === "function" &&
@@ -59,7 +59,7 @@ export function ShareButton({
       }
     }
 
-    // 2. Clipboard Fallback
+    // Clipboard Fallback
     if (typeof navigator !== "undefined" && navigator.clipboard && navigator.clipboard.writeText) {
       try {
         await navigator.clipboard.writeText(shareUrl);

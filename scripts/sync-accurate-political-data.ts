@@ -6,11 +6,11 @@ import Party from "../models/Party";
 async function syncAccurateData() {
   await connectDB();
   console.log("==================================================================");
-  console.log("🚀 EXECUTING JANDARSHAN PRODUCTION DATA NORMALIZATION & PROVENANCE");
+  console.log("[EXEC] EXECUTING JANDARSHAN PRODUCTION DATA NORMALIZATION & PROVENANCE");
   console.log("   Reference Audit Date: 15 September 2026");
   console.log("==================================================================\n");
 
-  // 1. Merge duplicate Nitin Gadkari
+  // Merge duplicate Nitin Gadkari
   console.log("[1] Merging duplicate Nitin Gadkari...");
   const canonicalGadkari = await Politician.findOne({ slug: "nitin-gadkari" });
   const duplicateGadkari = await Politician.findOne({ slug: "shri-nitin-jairam-gadkari" });
@@ -46,7 +46,7 @@ async function syncAccurateData() {
     console.log("✓ Canonical Nitin Gadkari confirmed.");
   }
 
-  // 2. Canonical party records
+  // Canonical party records
   console.log("\n[2] Ensuring canonical party records & official abbreviations...");
   const CANONICAL_PARTIES: Array<{
     slug: string;
@@ -141,7 +141,7 @@ async function syncAccurateData() {
   }
   console.log(`✓ Synchronized ${CANONICAL_PARTIES.length} canonical parties with official metadata.`);
 
-  // 3. Remap orphan party slugs
+  // Remap orphan party slugs
   console.log("\n[3] Remapping orphan party slugs in Politician collection...");
   const SLUG_MAP: Record<string, { slug: string; partyName: string }> = {
     "aitc": { slug: "tmc", partyName: "All India Trinamool Congress" },
@@ -206,7 +206,7 @@ async function syncAccurateData() {
     }
   }
 
-  // 4. Update J&K ruling party in State collection
+  // Update J&K ruling party in State collection
   console.log("\n[4] Normalizing State collection ruling parties...");
   await State.updateOne(
     { name: /jammu/i },
@@ -214,7 +214,7 @@ async function syncAccurateData() {
   );
   console.log("✓ Corrected Jammu & Kashmir ruling party to 'JKNC'");
 
-  // 5. Ensure Former Leaders are properly labeled with tenureStatus: "former"
+  // Ensure Former Leaders are properly labeled with tenureStatus: "former"
   console.log("\n[5] Updating tenureStatus for Former Leaders...");
   const formerLeaders = [
     {
@@ -271,7 +271,7 @@ async function syncAccurateData() {
     console.log(`✓ Verified tenure status for ${fl.slug} (tenure: ${fl.tenureStatus})`);
   }
 
-  // 6. Set Official Provenance on all active Lok Sabha MPs
+  // Set Official Provenance on all active Lok Sabha MPs
   console.log("\n[6] Stamping verified provenance on 18th Lok Sabha & Rajya Sabha MPs...");
   const lsRes = await Politician.updateMany(
     { chamber: "Lok Sabha" },
@@ -302,7 +302,7 @@ async function syncAccurateData() {
   );
   console.log(`✓ Stamped official provenance on ${rsRes.modifiedCount} Rajya Sabha MPs`);
 
-  // 7. Set Official Provenance on all 31 Chief Ministers
+  // Set Official Provenance on all 31 Chief Ministers
   console.log("\n[7] Stamping official provenance on all 31 Chief Ministers...");
   const cmRes = await Politician.updateMany(
     { role: "CM" },
@@ -318,7 +318,7 @@ async function syncAccurateData() {
   );
   console.log(`✓ Stamped official provenance on ${cmRes.modifiedCount} active Chief Ministers`);
 
-  // 8. Set Official Provenance on States collection
+  // Set Official Provenance on States collection
   console.log("\n[8] Stamping provenance on States & Union Territories collection...");
   const stateRes = await State.updateMany(
     {},
@@ -334,7 +334,7 @@ async function syncAccurateData() {
   );
   console.log(`✓ Stamped official provenance on ${stateRes.modifiedCount} States & UTs`);
 
-  // 9. Re-verify orphan party links
+  // Re-verify orphan party links
   console.log("\n[9] Post-normalization verification of Politician -> Party links...");
   const unlinkedPoliticians = [];
   const politicians = await Politician.find().select("slug name party partyName").lean();
@@ -346,7 +346,7 @@ async function syncAccurateData() {
   }
 
   if (unlinkedPoliticians.length > 0) {
-    console.log(`⚠️ Remaining unlinked politicians: ${unlinkedPoliticians.length}`);
+    console.log(`[WARN] Remaining unlinked politicians: ${unlinkedPoliticians.length}`);
     for (const u of unlinkedPoliticians) {
       console.log(`   - ${u.politician} (${u.slug}) references missing party: '${u.party}'`);
     }

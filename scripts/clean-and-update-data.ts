@@ -249,9 +249,9 @@ function toSlug(name: string) {
 
 async function main() {
   await connectDB();
-  console.log("🚀 Starting Comprehensive Data Cleanup & Update...");
+  console.log("[EXEC] Starting Comprehensive Data Cleanup & Update...");
 
-  // 1. Purge scraper garbage
+  // Purge scraper garbage
   const deleted = await Politician.deleteMany({
     $or: [
       { name: /^file:/i },
@@ -261,9 +261,9 @@ async function main() {
       { state: /membership by/i }
     ]
   });
-  console.log(`🧹 Cleaned up ${deleted.deletedCount} scraper garbage documents.`);
+  console.log(`[CLEAN] Cleaned up ${deleted.deletedCount} scraper garbage documents.`);
 
-  // 2. Fix bracketed wiki states and party names
+  // Fix bracketed wiki states and party names
   const allPoliticians = await Politician.find().lean();
   let cleanedSyntax = 0;
   for (const p of allPoliticians) {
@@ -285,9 +285,9 @@ async function main() {
       cleanedSyntax++;
     }
   }
-  console.log(`✨ Cleaned bracketed wiki syntax on ${cleanedSyntax} politicians.`);
+  console.log(`[DONE] Cleaned bracketed wiki syntax on ${cleanedSyntax} politicians.`);
 
-  // 3. Upsert National Leaders
+  // Upsert National Leaders
   for (const leader of NATIONAL_LEADERS) {
     await Politician.updateOne(
       { slug: leader.slug },
@@ -297,7 +297,7 @@ async function main() {
     console.log(`⭐ Synced leader: ${leader.name} (${leader.role})`);
   }
 
-  // 4. Upsert / Synchronize All Chief Ministers
+  // Upsert / Synchronize All Chief Ministers
   for (const cm of CMS) {
     const slug = toSlug(cm.name);
     await Politician.updateOne(
@@ -332,9 +332,9 @@ async function main() {
       }
     );
   }
-  console.log(`🏛️ Synced all ${CMS.length} Chief Ministers & State associations.`);
+  console.log(`[SYNC] Synced all ${CMS.length} Chief Ministers & State associations.`);
 
-  // 5. Update Party Alliances and Logos
+  // Update Party Alliances and Logos
   const parties = await Party.find();
   let partyUpdated = 0;
   for (const p of parties) {
@@ -356,7 +356,7 @@ async function main() {
     );
     partyUpdated++;
   }
-  console.log(`🚩 Updated alliances and logos for ${partyUpdated} parties.`);
+  console.log(`[UPDATE] Updated alliances and logos for ${partyUpdated} parties.`);
 
   console.log("✅ Data synchronization complete!");
   process.exit(0);

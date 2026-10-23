@@ -76,13 +76,13 @@ To maintain the credibility, performance, and legal integrity of the platform, a
 Before submitting any Pull Request, ensure that all automated checks pass locally with **zero errors and zero warnings**:
 
 ```bash
-# 1. Run ESLint across application code
+# Run ESLint across application code
 npm run lint
 
-# 2. Run TypeScript compiler type-check
+# Run TypeScript compiler type-check
 npx tsc --noEmit
 
-# 3. Compile the production Next.js build
+# Compile the production Next.js build
 npm run build
 ```
 

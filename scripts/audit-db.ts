@@ -11,21 +11,21 @@ async function audit() {
   await connectDB();
   console.log("CONNECTED TO DB");
 
-  // 1. Audit States
+  // Audit States
   const states = await State.find().sort({ name: 1 }).lean();
   console.log(`\n=== STATES AUDIT (${states.length} states) ===`);
   for (const s of states) {
     console.log(`[STATE] ${s.name} | CM: ${s.cm} | RulingParty: ${s.rulingParty} | CM-Slug: ${s.cmSlug}`);
   }
 
-  // 2. Audit Politicians with role CM
+  // Audit Politicians with role CM
   const cms = await Politician.find({ role: "CM" }).sort({ state: 1 }).lean();
   console.log(`\n=== POLITICIANS WITH ROLE 'CM' (${cms.length} records) ===`);
   for (const c of cms) {
     console.log(`[CM] ${c.name} (${c.slug}) | State: ${c.state} | Party: ${c.partyName} | Status: ${c.status}`);
   }
 
-  // 3. Search for known former CMs still marked as active or CM
+  // Search for known former CMs still marked as active or CM
   const formerNames = [
     "Ashok Gehlot",
     "Shivraj Singh Chouhan",
@@ -47,7 +47,7 @@ async function audit() {
     }
   }
 
-  // 4. Party Counts and Seat distributions
+  // Party Counts and Seat distributions
   const parties = await Party.find().sort({ seatsLokSabha: -1 }).limit(10).lean();
   console.log(`\n=== TOP PARTIES BY LOK SABHA SEATS ===`);
   for (const party of parties) {

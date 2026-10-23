@@ -78,15 +78,15 @@ export const getStateBySlug = cache(async (slug: string) => {
     const normalizedSlug =
       STATE_ALIASES[slug.toLowerCase()] || slug.toLowerCase();
 
-    // 1. Direct slug match
+    // Direct slug match
     let s = await State.findOne({ slug: normalizedSlug }).lean();
     if (s) return JSON.parse(JSON.stringify(s));
 
-    // 2. Try raw slug
+    // Try raw slug
     s = await State.findOne({ slug }).lean();
     if (s) return JSON.parse(JSON.stringify(s));
 
-    // 3. Try matching by name regex
+    // Try matching by name regex
     const clean = normalizedSlug.replace(/-/g, " ");
     const pattern = clean
       .replace(/\band\b/g, "(&|and)")
@@ -96,7 +96,7 @@ export const getStateBySlug = cache(async (slug: string) => {
     }).lean();
     if (byName) return JSON.parse(JSON.stringify(byName));
 
-    // 4. Fuzzy search by contains
+    // Fuzzy search by contains
     const fuzzy = await State.findOne({
       name: new RegExp(clean.split(" ")[0], "i"),
     }).lean();

@@ -527,7 +527,7 @@ export function ThreeParliamentChamber({
       const radius = innerRadius + r * rowSpacing;
       const yElevation = 0.45 + r * 0.48; // Stepped amphitheater tier riser
 
-      // 1. Treasury Wing (NDA)
+      // Treasury Wing (NDA)
       const countNDA = ndaPerRow[r];
       for (let i = 0; i < countNDA; i++) {
         if (ndaIdx >= ndaList.length) break;
@@ -537,7 +537,7 @@ export function ThreeParliamentChamber({
         createSeatMesh(seatData, angle, radius, yElevation, ndaMaterial, "NDA");
       }
 
-      // 2. Center Crossbenches (Others / Regional)
+      // Center Crossbenches (Others / Regional)
       const countOthers = othersPerRow[r];
       const othersStartAngle = startAngle + ndaSpan + aisleGap;
       for (let i = 0; i < countOthers; i++) {
@@ -556,7 +556,7 @@ export function ThreeParliamentChamber({
         );
       }
 
-      // 3. Opposition Wing (INDIA)
+      // Opposition Wing (INDIA)
       const countINDIA = indiaPerRow[r];
       const indiaStartAngle = othersStartAngle + othersSpan + aisleGap;
       for (let i = 0; i < countINDIA; i++) {
